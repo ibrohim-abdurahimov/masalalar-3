@@ -92,3 +92,17 @@
     
     // console.log(findMidArrays(nums1, nums2));
 }
+{
+    // masala-60
+    var searchMatrix = function(matrix, target) {
+        let result = false
+        matrix.forEach((arr)=>{
+            if(arr.includes(target)){
+                result = true
+            }
+        })
+        return result
+    };
+    console.log(searchMatrix([[1,3,5,7],[10,11,16,20],[23,30,34,60]],3))
+    console.log(searchMatrix([[13,5,7],[10,11,16,20],[23,30,34,60]],13))
+}
